@@ -288,7 +288,6 @@
 
       bgMusic.loop = true;
       bgMusic.volume = 0.3;
-      bgMusic.play();
 
       function init() {
         scene = new THREE.Scene();
@@ -547,6 +546,8 @@
         health = SETTINGS.MAX_HEALTH;
         level = 1;
         combo = 0;
+
+        bgMusic.play();
 
         document.getElementById("score").textContent = "Score: 0";
         document.getElementById(
